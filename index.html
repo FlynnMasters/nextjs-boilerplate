@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GWA Calculator Philippines – Free & Accurate Online Tool</title>
+<meta name="description" content="Free GWA Calculator for Philippine students. Compute General Weighted Average with formula explanation, examples, grading scale, and FAQs.">
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    margin: 0;
+    color: #333;
+  }
+  .container {
+    max-width: 950px;
+    margin: auto;
+    padding: 25px;
+  }
+  h1 {
+    text-align: center;
+    color: #1f3a8a;
+  }
+  .subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+  }
+  .card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    margin-bottom: 15px;
+  }
+  .row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    flex: 1;
+  }
+  .btn {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+  }
+  .primary { background: #4f46e5; color: #fff; }
+  .secondary { background: #e5e7eb; }
+  .danger { color: #ef4444; background: transparent; }
+  .center { text-align: center; }
+  .result {
+    font-size: 20px;
+    font-weight: bold;
+    color: #16a34a;
+    text-align: center;
+    margin-top: 15px;
+  }
+  h2 {
+    color: #1f3a8a;
+    margin-top: 35px;
+  }
+  .faq {
+    background: #fff;
+    padding: 15px;
+    border-left: 4px solid #4f46e5;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>GWA Calculator Philippines – Free & Accurate Online Tool</h1>
+<p class="subtitle">
+Easily compute your General Weighted Average (GWA) and understand how grades affect academic standing in Philippine schools, colleges, and universities.
+</p>
+
+<div id="subjects-container"></div>
+
+<div class="center">
+  <button class="btn secondary" onclick="addSubject()">+ Add subject</button>
+</div>
+
+<div class="center">
+  <button class="btn primary" onclick="calculateGWA()">Calculate GWA</button>
+  <button class="btn secondary" onclick="loadSample()">Load sample</button>
+  <button class="btn secondary" onclick="clearAll()">Clear</button>
+</div>
+
+<div class="result" id="result"></div>
+
+<!-- SEO CONTENT -->
+
+<h2>What is GWA in the Philippines?</h2>
+<p>
+General Weighted Average (GWA) is the academic average used by many Philippine educational institutions.
+It considers both the grade received and the number of units per subject. This makes GWA a more accurate measure
+of academic performance compared to a simple average of grades.
+</p>
+
+<h2>How to Compute GWA</h2>
+<p>
+The standard formula for computing GWA is:
+<strong>(Grade × Units) ÷ Total Units</strong>.
+Each subject grade is multiplied by its corresponding units. The sum of all weighted grades is then divided by the
+total number of units taken during the semester.
+</p>
+
+<h2>Manual Example of GWA Calculation</h2>
+<p>
+Suppose a student has the following grades:
+<br>Math: 1.75 (3 units)
+<br>English: 2.00 (3 units)
+<br>Science: 1.50 (4 units)
+</p>
+<p>
+Multiply each grade by units, add them, and divide by total units:
+<br>(1.75×3) + (2.00×3) + (1.50×4) = 5.25 + 6 + 6 = 17.25
+<br>Total Units = 10
+<br><strong>GWA = 17.25 ÷ 10 = 1.73</strong>
+</p>
+
+<h2>Difference Between GWA and GPA</h2>
+<p>
+GWA and GPA both measure academic performance but may differ in grading scale and computation method.
+GWA commonly follows the Philippine grading system, while GPA is often used in international or American-based systems.
+Some schools may convert GWA to GPA for scholarship or exchange program requirements.
+</p>
+
+<h2>Common Grading Scale in Philippine Universities</h2>
+<p>
+Many universities use a grading scale where:
+<br>1.00 – Excellent
+<br>1.25 to 1.75 – Very Good
+<br>2.00 to 2.75 – Good / Satisfactory
+<br>3.00 – Passing
+<br>5.00 – Failed
+</p>
+
+<h2>Why GWA is Important for Students</h2>
+<p>
+Students monitor their GWA to evaluate academic progress every term. It plays a major role in determining
+eligibility for Latin honors, scholarship qualifications, dean’s list recognition, and retention in degree programs.
+Maintaining a strong GWA helps students stay competitive academically.
+</p>
+
+<h2>GWA and Latin Honors Eligibility</h2>
+<p>
+Latin honors such as Cum Laude, Magna Cum Laude, and Summa Cum Laude are usually based on a student’s final GWA.
+Each university sets its own required GWA threshold, which students must meet along with other academic policies.
+</p>
+
+<h2>Scholarship and Academic Requirements</h2>
+<p>
+Many scholarships require students to maintain a specific GWA every semester.
+Failing to meet the required average may lead to probation or loss of financial assistance.
+That is why regularly computing GWA helps students stay aware of their academic standing.
+</p>
+
+<h2>Tips to Maintain a Good GWA</h2>
+<p>
+Students can maintain a strong GWA by monitoring grades each term, focusing on high-unit subjects,
+and improving performance in difficult courses. Consistent study habits and early grade tracking
+help prevent academic risks and support long-term academic goals.
+</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq">
+  <strong>Is GWA different from GPA?</strong>
+  <p>Yes, both measure academic performance but may follow different grading scales depending on the institution.</p>
+</div>
+
+<div class="faq">
+  <strong>How often should I compute my GWA?</strong>
+  <p>It is recommended to compute your GWA every semester to track academic progress and eligibility for honors.</p>
+</div>
+
+<div class="faq">
+  <strong>Do all universities use the same grading system?</strong>
+  <p>No, grading systems may vary slightly across universities, so students should always check their school’s official grading policy.</p>
+</div>
+
+</div>
+
+<script>
+function createRow(subject='', grade='', units='') {
+  const div = document.createElement('div');
+  div.className = 'card row';
+  div.innerHTML = `
+    <input type="text" placeholder="Subject name" value="${subject}">
+    <input type="number" step="0.01" placeholder="Grade" value="${grade}">
+    <input type="number" step="1" placeholder="Units" value="${units}">
+    <button class="btn danger" onclick="this.parentElement.remove()">Remove</button>
+  `;
+  return div;
+}
+
+function addSubject() {
+  document.getElementById('subjects-container').appendChild(createRow());
+}
+
+function calculateGWA() {
+  const rows = document.querySelectorAll('#subjects-container .row');
+  let totalWeighted = 0;
+  let totalUnits = 0;
+
+  rows.forEach(row => {
+    const grade = parseFloat(row.children[1].value);
+    const units = parseFloat(row.children[2].value);
+
+    if (!isNaN(grade) && !isNaN(units)) {
+      totalWeighted += grade * units;
+      totalUnits += units;
+    }
+  });
+
+  const result = document.getElementById('result');
+  if (totalUnits > 0) {
+    result.textContent = "Your GWA: " + (totalWeighted / totalUnits).toFixed(2);
+  } else {
+    result.textContent = "Please enter valid grades and units.";
+  }
+}
+
+function clearAll() {
+  document.getElementById('subjects-container').innerHTML = '';
+  document.getElementById('result').textContent = '';
+}
+
+function loadSample() {
+  clearAll();
+  document.getElementById('subjects-container').appendChild(createRow('Math', '1.75', '3'));
+  document.getElementById('subjects-container').appendChild(createRow('English', '2.00', '3'));
+  document.getElementById('subjects-container').appendChild(createRow('Science', '1.50', '4'));
+}
+
+addSubject();
+addSubject();
+</script>
+
+</body>
+</html>
